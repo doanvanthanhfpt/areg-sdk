@@ -4,10 +4,23 @@ A core responsibility of The National Travel and Tourism Office (NTTO) is to col
 
 **NTTO's** Board of Managers are charged with managing, improving, and expanding the system to fully account and report the impact of travel and tourism in the United States. The analysis results help to forcecast and operation, support make decision creates a positive climate for growth in travel and tourism by reducing institutional barriers to tourism, administers joint marketing efforts, provides official travel and tourism statistics, and coordinates efforts across federal agencies.
 
-## Introduction[![](./docs/img/pin.svg)](#introduction)
+## Project Description[![](./docs/img/pin.svg)](#introduction)
 
-**AREG SDK** is a developer-friendly, interface-centric real-time asynchronous communication engine to enable [distributed-](https://en.wikipedia.org/wiki/Distributed_computing) and [mist-](https://csrc.nist.gov/publications/detail/sp/500-325/final)computing, where connected Things interact and provide services as if they act like thin distributed servers.
+In this project, some source datas will be use to do data modeling:
+* **I94 Immigration**: The source data for I94 immigration data is available in local disk in the format of sas7bdat. This data comes from US National Tourism and Trade Office. The data dictionary is also included in this project for reference. The actual source of the data is from https://travel.trade.gov/research/reports/i94/historical/2016.html. This data is already uploaded to the workspace.
 
+* **World Temperature Data**: This dataset came from Kaggle. This data is already uploaded to the workspace.
+
+* **Airport Code**: This is a simple table with airport codes. The source of this data is from https://datahub.io/core/airport-codes#data. It is highly recommended to use it for educational purpose only but not for commercial or any other purpose. This data is already uploaded to the workspace.
+
+* Other text files such as * *I94Addr.txt* *, * *I94CIT_I94RES.txt* *, * *I94Mode.txt* *, * *I94Port.txt* * and * *I94Visa.txt* * files are used to enrich immigration data for better analysis. These files are created from the * *I94_SAS_Labels_Descriptions.SAS* * file provided to describe each and every field in the immigration data.
+
+**The project follows the follow steps**:
+* Step 1: Scope the Project and Gather Data
+* Step 2: Explore and Assess the Data
+* Step 3: Define the Data Model
+* Step 4: Run ETL to Model the Data
+* Step 5: Complete Project Write Up
 ---
 
 ## Table of contents[![](./docs/img/pin.svg)](#table-of-contents)
