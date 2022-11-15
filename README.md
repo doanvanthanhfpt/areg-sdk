@@ -25,14 +25,14 @@ In this project, some source datas will be use to do data modeling:
 
 ## Table of contents[![](./docs/img/pin.svg)](#table-of-contents)
 1. [Step 1: Scope the Project and Gather Data](#step1)
-2. [More than embedded](#more-than-embedded)
-3. [Composition](#composition)
-4. [Software build](#software-build)
-5. [Software integration](#software-integration)
+2. [Step 2: Explore and Assess the Data](#step2)
+3. [Step 3: Define the Data Model](#step3)
+4. [Step 4: Run Pipelines to Model the Data](#step4)
+5. [Step 5: Complete Project Write Up](step5)
    - [Multicast router](#mulitcast-router)
    - [Logging service](#logging-service)
    - [Development](#development)
-6. [Use cases and benefits](#use-cases-and-benefits)
+6. [Final: Contribution Thanks](#thanks)
    - [Distributes solutions](#distributed-solution)
    - [Driverless devices](#driverless-devices)
    - [Real-time solutions](#real-time-solutions)
@@ -55,7 +55,7 @@ Since data is generated and collected at the edge of the network (mist network),
 
 ---
 
-## Step 2: Explore and Assess the Data[![](./docs/img/pin.svg)](#more-than-embedded)
+## Step 2: Explore and Assess the Data[![](./docs/img/pin.svg)](#step2)
 
 When we were designing AREG SDK, the guiding principle was to provide a homogeneous solution for multithreading, multiprocessing and internet communication wrapped in services appropriately having _Local_, _Public_ and _Internet_ categories. These services are neither processes nor tasks managed by the operating system, they are software components with a predefined interface, in which methods are invoked remotely.
 <br><a href="docs/img/areg-services.png"><img src="docs/img/areg-services.png" alt="AREG SDK distributed services" style="width:70%;height:70%"/></a><br>
@@ -159,7 +159,7 @@ The development guidance and step-by-step example to create a simple service-ena
 
 ---
 
-## Contribution Thanks[![](./docs/img/pin.svg)](#use-cases-and-benefits)
+## Final: Contribution Thanks[![](./docs/img/pin.svg)](#thanks)
 
 AREG SDK can be used in a very large scope of multithreading and multiprocessing application development running on Linux or Windows machines.
 
