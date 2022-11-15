@@ -1,8 +1,8 @@
 ## Data Engineering Capstone Project[![](./docs/img/pin.svg)](#project-status)
-
+A core responsibility of The National Travel and Tourism Office (NTTO) is to collect, analyze, and disseminate international travel and tourism statistics.
 ## Introduction[![](./docs/img/pin.svg)](#introduction)
 
-**AREG SDK** is a developer-friendly, interface-centric real-time asynchronous communication engine to enable [distributed-](https://en.wikipedia.org/wiki/Distributed_computing) and [mist-](https://csrc.nist.gov/publications/detail/sp/500-325/final)computing, where connected Things interact and provide services as if they act like thin distributed servers.
+**NTTO's** Board of Managers are charged with managing, improving, and expanding the system to fully account and report the impact of travel and tourism in the United States. The analysis results help to forcecast and operation, support make decision creates a positive climate for growth in travel and tourism by reducing institutional barriers to tourism, administers joint marketing efforts, provides official travel and tourism statistics, and coordinates efforts across federal agencies.
 
 ## Introduction[![](./docs/img/pin.svg)](#introduction)
 
