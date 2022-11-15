@@ -48,14 +48,21 @@ In this project, some source datas will be use to do data modeling:
 
 #### Data Volume Assessment(#data_volume_assessment)
 
-Configure [_log.init_](./framework/areg/resources/log.init) to set scopes, log priorities and log file name:
+* Create confg file [_etl.cfg_](./framework/areg/resources/log.init) to set basic configuration:
 ```
-log.file        = %home%/logs/%appname%_%time%.log # create logs in 'log' subfolder of user home 
-scope.mcrouter.*= NOTSET ;                         # disable logs for mcrouter.
+[DIR]
+INPUT_DIR = .
+OUTPUT_DIR = ./storage
 
-scope.my_app.*                   = DEBUG | SCOPE ; # enable all logs of my_app
-scope.my_app.ignore_this_scope   = NOTSET ;        # disable logs of certain scopes in my_app
-scope.my_app.ignore_this_group_* = NOTSET ;        # disable logs of certain scope group in my_app
+[DATA]
+I94_IMMI = ../../data/18-83510-I94-Data-2016/i94_apr16_sub.sas7bdat
+WORLD_TEMPE = ../../data2/GlobalLandTemperaturesByCity.csv
+CITY_DEMOGRAPHIC = ./us-cities-demographics.csv
+AIR_PORT = ./airport-codes_csv.csv
+
+[SPLIT]
+I94_IMMI_SPLITED_DIR = ./storage/.sas7bdat
+WORLD_TEMPE_SPLITED_DIR = ./storage/.csv
 ```
 > 💡 By default, the `router.init` and `log.init` files are located in the `config` subfolder of binaries.<br>
 > 💡 To enable all logs of all applications, use `scope.*  = DEBUG | SCOPE ;` .<br>
