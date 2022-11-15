@@ -24,7 +24,7 @@ In this project, some source datas will be use to do data modeling:
 ---
 
 ## Table of contents[![](./docs/img/pin.svg)](#table-of-contents)
-1. [Motivation](#motivation)
+1. [Step 1: Scope the Project and Gather Data](#step1)
 2. [More than embedded](#more-than-embedded)
 3. [Composition](#composition)
 4. [Software build](#software-build)
@@ -44,7 +44,7 @@ In this project, some source datas will be use to do data modeling:
 
 ---
 
-## Step 1: Scope the Project and Gather Data[![](./docs/img/pin.svg)](#motivation)
+## Step 1: Scope the Project and Gather Data[![](./docs/img/pin.svg)](#step1)
 
 Traditionally, devices are connected to clients to stream data to the cloud or fog servers for further processing.
 <br><br><a href="/docs/img/mist-network.png"><img src="/docs/img/mist-network.png" alt="IoT-to-Cloud (Nebula) network" style="width:70%;height:70%"/></a><br><br>
