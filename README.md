@@ -44,7 +44,7 @@ In this project, some source datas will be use to do data modeling:
 
 ---
 
-## Motivation[![](./docs/img/pin.svg)](#motivation)
+## Step 1: Scope the Project and Gather Data[![](./docs/img/pin.svg)](#motivation)
 
 Traditionally, devices are connected to clients to stream data to the cloud or fog servers for further processing.
 <br><br><a href="/docs/img/mist-network.png"><img src="/docs/img/mist-network.png" alt="IoT-to-Cloud (Nebula) network" style="width:70%;height:70%"/></a><br><br>
@@ -55,7 +55,7 @@ Since data is generated and collected at the edge of the network (mist network),
 
 ---
 
-## More than embedded[![](./docs/img/pin.svg)](#more-than-embedded)
+## Step 2: Explore and Assess the Data[![](./docs/img/pin.svg)](#more-than-embedded)
 
 When we were designing AREG SDK, the guiding principle was to provide a homogeneous solution for multithreading, multiprocessing and internet communication wrapped in services appropriately having _Local_, _Public_ and _Internet_ categories. These services are neither processes nor tasks managed by the operating system, they are software components with a predefined interface, in which methods are invoked remotely.
 <br><a href="docs/img/areg-services.png"><img src="docs/img/areg-services.png" alt="AREG SDK distributed services" style="width:70%;height:70%"/></a><br>
@@ -70,7 +70,7 @@ The AREG engine forms a fault-tolerant system, automatically discovers services,
 
 ---
 
-## Composition[![](./docs/img/pin.svg)](#composition)
+## Step 3: Define the Data Model[![](./docs/img/pin.svg)](#composition)
 
 AREG SDK consists of:
 1. [Multicast router (_mcrouter_)](./framework/mcrouter/) to use for IPC. It runs either as a service managed by the OS or as a console application.
@@ -81,7 +81,7 @@ The framework contains a dynamic and configurable logging service. More tools an
 
 ---
 
-## Software build[![](./docs/img/pin.svg)](#software-build)
+## Step 4: Run Pipelines to Model the Data[![](./docs/img/pin.svg)](#software-build)
 
 An example to get source codes and compile under **Linux**. You'd need at least C++17 `g++` (default) compiler. Open _Terminal_ console in your `projects` folder and take the following steps:
 ```shell
@@ -127,7 +127,7 @@ Details on how to change compiler, load and compile sources for various targets 
 
 ---
 
-## Software integration[![](./docs/img/pin.svg)](#software-integration)
+## Step 5: Complete Project Write Up[![](./docs/img/pin.svg)](#software-integration)
 
 #### Mulitcast router
 
@@ -159,7 +159,7 @@ The development guidance and step-by-step example to create a simple service-ena
 
 ---
 
-## Use cases and benefits[![](./docs/img/pin.svg)](#use-cases-and-benefits)
+## Contribution Thanks[![](./docs/img/pin.svg)](#use-cases-and-benefits)
 
 AREG SDK can be used in a very large scope of multithreading and multiprocessing application development running on Linux or Windows machines.
 
@@ -239,33 +239,3 @@ The software components in applications normally are split into Data, Controller
 The same technique of simulating data can be used to create API-driven test automations.
 
 ---
-
-## Examples[![](./docs/img/pin.svg)](#examples)
-
-There are various [examples](./examples/) to demonstrate features of the AREG SDK. The examples are listed in the [examples/README.md](./examples/README.md) document.
-
----
-
-## Licensing[![](./docs/img/pin.svg)](#licensing)
- 
-AREG SDK is dual-licensed under free open source license (Apache version 2 license) and commercial license, which gives the commercial support, full rights to create and distribute software without open source license obligations. For licensing details see [LICENSE](./LICENSE.txt) document.
- 
-For commercial license, support or additional information, please visit [Aregtech](https://www.aregtech.com/) website or contact _info[at]aregtech.com_.
-
----
-
-## Call for action[![](./docs/img/pin.svg)](#call-for-action)
-
-Do you like the project, have new ideas or need features? You are welcome to join the project. To join the development team, please prepare an introduction and code examples. Please also share the project with your connections on [![Twitter](https://img.shields.io/twitter/url?label=Twitter&style=social&url=https%3A%2F%2Fgithub.com%2Faregtech%2Fareg-sdk)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Faregtech%2Fareg-sdk) and other social media platforms. [![Star AREG SDK](https://img.shields.io/github/stars/aregtech/areg-sdk.svg?style=social&label=Star%20AREG%20SDK)](https://github.com/aregtech/areg-sdk/) on GitHub to inspire us and continue to develop the technology with heart! We'll feel useful and motivated to develop more.
-
----
-
-**Follow us**<br>
-[![Follow us on twitter](https://img.shields.io/twitter/follow/aregtech.svg?style=social)](https://twitter.com/intent/follow?screen_name=aregtech) 
-[![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Aregtech-blue?style=flat&logo=linkedin&logoColor=b0c0c0&labelColor=363D44)](https://www.linkedin.com/company/aregtech) [![Join the chat at https://gitter.im/areg-sdk/community](https://badges.gitter.im/areg-sdk/community.svg)](https://gitter.im/areg-sdk/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
----
-
-![Viewers](https://gpvc.arturio.dev/aregtech)
-
-<!-- markdownlint-enable -->
