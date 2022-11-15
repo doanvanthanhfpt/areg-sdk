@@ -1,5 +1,8 @@
-## Project Status[![](./docs/img/pin.svg)](#project-status)
+## Data Engineering Capstone Project[![](./docs/img/pin.svg)](#project-status)
 
+## Introduction[![](./docs/img/pin.svg)](#introduction)
+
+**AREG SDK** is a developer-friendly, interface-centric real-time asynchronous communication engine to enable [distributed-](https://en.wikipedia.org/wiki/Distributed_computing) and [mist-](https://csrc.nist.gov/publications/detail/sp/500-325/final)computing, where connected Things interact and provide services as if they act like thin distributed servers.
 
 ## Introduction[![](./docs/img/pin.svg)](#introduction)
 
