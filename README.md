@@ -46,12 +46,20 @@ In this project, some source datas will be use to do data modeling:
 
 ## Step 1: Scope the Project and Gather Data[![](./docs/img/pin.svg)](#step1)
 
-Traditionally, devices are connected to clients to stream data to the cloud or fog servers for further processing.
-<br><br><a href="/docs/img/mist-network.png"><img src="/docs/img/mist-network.png" alt="IoT-to-Cloud (Nebula) network" style="width:70%;height:70%"/></a><br><br>
-
 #### Data Volume Assessment(#data_volume_assessment)
 
+Configure [_log.init_](./framework/areg/resources/log.init) to set scopes, log priorities and log file name:
+```
+log.file        = %home%/logs/%appname%_%time%.log # create logs in 'log' subfolder of user home 
+scope.mcrouter.*= NOTSET ;                         # disable logs for mcrouter.
 
+scope.my_app.*                   = DEBUG | SCOPE ; # enable all logs of my_app
+scope.my_app.ignore_this_scope   = NOTSET ;        # disable logs of certain scopes in my_app
+scope.my_app.ignore_this_group_* = NOTSET ;        # disable logs of certain scope group in my_app
+```
+> 💡 By default, the `router.init` and `log.init` files are located in the `config` subfolder of binaries.<br>
+> 💡 To enable all logs of all applications, use `scope.*  = DEBUG | SCOPE ;` .<br>
+> 💡 In the current version the logging is possible only in file.
 
 #### Data Attributions Assessment(#data_attributions_assessment)
 
@@ -70,7 +78,8 @@ scope.my_app.ignore_this_group_* = NOTSET ;        # disable logs of certain sco
 
 ### Scope the Project(#scope_the_project)
 
-The development guidance and step-by-step example to create a simple service-enabled application are described in [DEVELOP](./docs/DEVELOP.md).
+Traditionally, devices are connected to clients to stream data to the cloud or fog servers for further processing.
+<br><br><a href="/docs/img/mist-network.png"><img src="/docs/img/mist-network.png" alt="IoT-to-Cloud (Nebula) network" style="width:70%;height:70%"/></a><br><br>
 
 ---
 
